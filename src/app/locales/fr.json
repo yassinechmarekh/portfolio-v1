@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "header": {
+    "navigation": {
+      "home": "Accueil",
+      "about": "Àpropos",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "intro_badge": "👋 Salut, je suis Yassine Chmarekh",
+      "title": [
+        "Développeur Frontend",
+        "Développeur Backend",
+        "Développeur Full Stack"
+      ],
+      "description": "Je suis un ingénieur logiciel passionné qui aime transformer les idées en applications web élégantes, fonctionnelles et évolutives. Grâce à mon expertise en technologies frontend et backend, je donne vie aux concepts à travers un code propre, des interfaces créatives et des performances optimisées.",
+      "quote": "Guidé par la curiosité. Focalisé sur la qualité. Toujours en train de créer quelque chose de nouveau.",
+      "buttons": {
+        "projects": "🚀 Explorer mes projets",
+        "contact": "📩 Travaillons ensemble"
+      }
+    }
+  }
+}

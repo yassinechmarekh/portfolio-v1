@@ -26,6 +26,43 @@
         "projects": "🚀 Explorer mes projets",
         "contact": "📩 Travaillons ensemble"
       }
+    },
+    "about": {
+      "profileCard": {
+        "fullName": "Yassine CHMAREKH",
+        "job": "Développeur Full Stack",
+        "user": "yassine_chm",
+        "status": "En ligne",
+        "contact": "Contactez-moi"
+      },
+      "text": {
+        "title": "Bonjour, je suis Yassine.",
+        "parag": [
+          "Développeur autodidacte expérimenté avec plus de <bold>5 ans</bold> d'expérience dans la création de produits SaaS avancés et de solutions B2B, spécialisé dans la transformation de designs imaginatifs en solutions web robustes et évolutives qui établissent de nouveaux standards.",
+          "J'aime créer des outils <bold>simples, intuitifs</bold> et <bold>agréables</bold> à utiliser.",
+          "Grâce à ces expériences, j'ai eu l'occasion de travailler avec des entreprises de toutes tailles, ainsi qu'avec des équipes spécialisées et pluridisciplinaires à travers différents fuseaux horaires, développant ainsi un style de travail basé sur la <bold>flexibilité, la clarté</bold> et la <bold>collaboration</bold>.",
+          "Je suis actuellement à la recherche d'un nouveau poste en tant que développeur. <link>Me recruter ?</link>"
+        ]
+      },
+      "cards": [
+        {
+          "title": "💼 3+ Ans",
+          "description": "D'expérience"
+        },
+        {
+          "title": "🧠 Full Stack",
+          "description": "React, Node.js, Next.js"
+        },
+        {
+          "title": "🌍 Basé au",
+          "description": "Maroc"
+        },
+        {
+          "title": "🎯 Passion pour",
+          "description": "Applications créatives et évolutives"
+        }
+      ],
+      "button": "Savoir Plus"
     }
   }
 }

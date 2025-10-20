@@ -34,11 +34,7 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body
-        className={` ${
-          spaceGrotesk.variable
-        } antialiased`}
-      >
+      <body className={` ${spaceGrotesk.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme={savedTheme ? savedTheme : "system"}

@@ -2,13 +2,16 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { match as matchLocale } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
-import { Locales } from "./lib/constants";
+import { CookiesKey, Locales } from "./lib/constants";
+import { cookies } from "next/headers";
 
 const locales = [Locales.ENGLISH, Locales.FRENCH];
-const defaultLocale = Locales.FRENCH;
 
 // Get the locale from the headers
-function getLocale(request: NextRequest): string {
+async function getLocale(request: NextRequest): Promise<string> {
+  const defaultLocale =
+    (await cookies()).get(CookiesKey.LOCALE)?.value || Locales.ENGLISH;
+
   // Retrieve accepted languages ​​from headers
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
@@ -23,7 +26,7 @@ function getLocale(request: NextRequest): string {
   }
 }
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Check if the pathname already contains a locale
@@ -34,7 +37,7 @@ export function middleware(request: NextRequest) {
   if (pathnameHasLocale) return;
 
   // Redirect if no locale is present
-  const locale = getLocale(request);
+  const locale = await getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;
 
   return NextResponse.redirect(request.nextUrl);

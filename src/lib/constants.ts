@@ -5,6 +5,7 @@ export enum Locales {
 
 export enum CookiesKey {
   THEME = "theme",
+  LOCALE = "locale"
 }
 
 export enum MenuLinks {

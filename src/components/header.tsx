@@ -30,14 +30,34 @@ const Header = ({ lang, menu }: HeaderProps) => {
   const { setTheme, theme } = useTheme();
   const pathname = usePathname();
 
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   const navItems = [
-    { id: "home", icon: Home, label: menu.home, href: `/#${MenuLinks.HOME}` },
-    { id: "about", icon: User, label: menu.about, href: `/#${MenuLinks.ABOUT}` },
-    { id: "skills", icon: Code, label: menu.skills, href: `/#${MenuLinks.SKILLS}` },
-    { id: "projects", icon: BookOpen, label: menu.projects, href: `/#${MenuLinks.PROJECTS}` },
-    { id: "contact", icon: Mail, label: menu.contact, href: `/#${MenuLinks.CONTACT}` },
+    { id: "home", icon: Home, label: menu.home, href: `/${lang}/#${MenuLinks.HOME}` },
+    {
+      id: "about",
+      icon: User,
+      label: menu.about,
+      href: `/${lang}/#${MenuLinks.ABOUT}`,
+    },
+    {
+      id: "skills",
+      icon: Code,
+      label: menu.skills,
+      href: `/${lang}/#${MenuLinks.SKILLS}`,
+    },
+    {
+      id: "projects",
+      icon: BookOpen,
+      label: menu.projects,
+      href: `/${lang}/#${MenuLinks.PROJECTS}`,
+    },
+    {
+      id: "contact",
+      icon: Mail,
+      label: menu.contact,
+      href: `/${lang}/#${MenuLinks.CONTACT}`,
+    },
   ];
 
   const toggleTheme = () => {
@@ -55,6 +75,8 @@ const Header = ({ lang, menu }: HeaderProps) => {
     const segments = pathname.split("/");
     segments[1] = newLang;
     const newPath = segments.join("/");
+
+    Cookies.set(CookiesKey.LOCALE, newLang, { expires: 365 });
 
     router.push(newPath);
   };
@@ -85,18 +107,18 @@ const Header = ({ lang, menu }: HeaderProps) => {
   }, []);
 
   return (
-    <header className="fixed bottom-6 md:bottom-auto top-auto md:top-6 left-1/2 -translate-x-1/2 flex items-center gap-1 px-4 py-1.5 bg-slate-100/70 dark:bg-background/80 border border-slate-700/50 dark:border-white/20 rounded-full backdrop-blur-sm z-50">
+    <header className="fixed bottom-6 md:bottom-auto top-auto md:top-6 left-1/2 -translate-x-1/2 flex items-center gap-1 px-2 xs:px-4 py-1 xs:py-1.5 bg-slate-100/70 dark:bg-background/80 border border-slate-700/50 dark:border-white/20 rounded-full backdrop-blur-sm z-50">
       {/* Home button - always visible and highlighted */}
       <Link
-        href={`/`}
+        href={`/${lang}`}
         className={cn(
-          "flex items-center justify-center w-9 h-9 rounded-full  hover-effect",
+          "flex items-center justify-center w-6 h-6 xs:w-8 xs:h-8 rounded-full  hover-effect",
           activeSection === "home"
             ? "menu-item-active [&_svg]:text-slate-700 dark:[&_svg]:text-cyan-300"
             : "menu-item-inactive [&_svg]:text-slate-700 dark:[&_svg]:text-white dark:hover:[&_svg]:text-cyan-300"
         )}
       >
-        <Home size={18} />
+        <Home className={"size-4 xs:size-5"} />
       </Link>
 
       {/* Divider */}
@@ -107,7 +129,7 @@ const Header = ({ lang, menu }: HeaderProps) => {
         {navItems.slice(1).map((item) => {
           const Icon = item.icon;
           return (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className={cn(
@@ -117,12 +139,9 @@ const Header = ({ lang, menu }: HeaderProps) => {
                   : "menu-item-inactive [&_svg]:text-slate-700 hover:[&_svg]:text-slate-700 dark:[&_svg]:text-white dark:hover:[&_svg]:text-cyan-300"
               )}
             >
-              <Icon
-                size={18}
-                className="text-slate-900 group-hover:text-slate-200"
-              />
+              <Icon className="text-slate-900 group-hover:text-slate-200 size-4 xs:size-5" />
               <span className="text-sm font-medium">{item.label}</span>
-            </a>
+            </Link>
           );
         })}
       </div>
@@ -132,18 +151,18 @@ const Header = ({ lang, menu }: HeaderProps) => {
         {navItems.slice(1).map((item) => {
           const Icon = item.icon;
           return (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className={cn(
-                "flex items-center justify-center w-8 h-8 rounded-full",
+                "flex items-center justify-center w-6 h-6 xs:w-8 xs:h-8 rounded-full",
                 activeSection === item.id
                   ? "menu-item-active [&_svg]:text-slate-700 dark:[&_svg]:text-cyan-300"
                   : "menu-item-inactive [&_svg]:text-slate-700 hover:[&_svg]:text-slate-700 dark:[&_svg]:text-white dark:hover:[&_svg]:text-cyan-300"
               )}
             >
-              <Icon size={18} />
-            </a>
+              <Icon className={"size-4 xs:size-5"} />
+            </Link>
           );
         })}
       </div>
@@ -152,12 +171,12 @@ const Header = ({ lang, menu }: HeaderProps) => {
       <div className="w-px h-6 bg-slate-700/50 dark:bg-white/20 mx-1" />
 
       {/* Language toggle button */}
-      <span
+      <div
         onClick={toggleLanguage}
-        className="flex items-center justify-center w-8 h-8 rounded-lg cursor-pointer menu-item-inactive"
+        className="flex items-center justify-center text-sm xs:text-base w-6 h-6 xs:w-8 xs:h-8 rounded-lg cursor-pointer menu-item-inactive"
       >
         {lang === "en" ? <span>FR</span> : <span>EN</span>}
-      </span>
+      </div>
 
       {/* Divider before theme toggle */}
       <div className="w-px h-6 bg-slate-700/50 dark:bg-white/20 mx-1" />
@@ -167,7 +186,11 @@ const Header = ({ lang, menu }: HeaderProps) => {
         onClick={toggleTheme}
         className="flex items-center justify-center w-8 h-8 rounded-lg cursor-pointer menu-item-inactive"
       >
-        {theme === "light" ? <Moon size={18} /> : <Sun size={18} />}
+        {theme === "light" ? (
+          <Moon className={"size-4 xs:size-5"} />
+        ) : (
+          <Sun className={"size-4 xs:size-5"} />
+        )}
       </span>
     </header>
   );

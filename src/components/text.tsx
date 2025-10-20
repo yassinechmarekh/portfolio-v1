@@ -6,6 +6,16 @@ interface TextProps {
   children: React.ReactNode;
 }
 
+export const Title = ({ className, children }: TextProps) => {
+  return (
+    <h1
+      className={cn("text-2xl xs:text-3xl md:text-4xl xl:text-5xl", className)}
+    >
+      {children}
+    </h1>
+  );
+};
+
 export const Parag = ({ className, children }: TextProps) => {
   return <p className={cn("text-xs xs:text-base", className)}>{children}</p>;
 };

@@ -22,7 +22,7 @@ const HeroHome = async ({ lang }: HeroHomeProps) => {
       <HeroEffect />
       <Container
         className={
-          "flex flex-col items-center justify-center space-y-4 max-w-5xl min-h-screen z-10"
+          "flex flex-col items-center justify-center space-y-4 max-w-5xl min-h-screen py-10 z-10"
         }
       >
         <StarBorder

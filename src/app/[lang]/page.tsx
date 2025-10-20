@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import { getLocales } from "@/lib/locales";
 import AboutHome from "@/sections/home/about-home";
 import HeroHome from "@/sections/home/hero-home";
+import SkillsHome from "@/sections/home/skills-home";
 import { LocaleType } from "@/types";
 import { cookies } from "next/headers";
 
@@ -17,6 +18,7 @@ export default async function Home({ params }: HomeProps) {
     <div>
       <HeroHome lang={lang} />
       <AboutHome aboutContent={locales.home.about} />
+      <SkillsHome />
     </div>
   );
 }

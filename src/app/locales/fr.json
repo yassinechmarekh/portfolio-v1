@@ -68,6 +68,29 @@
       "title": "Mes Compétences",
       "description": "Découvrez l’étendue de mes compétences techniques, du design front-end au développement back-end, illustrant ma capacité à créer des solutions web modernes, efficaces et conviviales."
     },
+    "projects": {
+      "title": "Mes Projets",
+      "description": "Découvrez une sélection de mes projets les plus marquants, mettant en avant mon expertise en développement full-stack, en conception d’interfaces modernes et en architecture web performante.",
+      "projectItems": {
+        "titles": {
+          "selfiecadeau": "Selfie Cadeau — Boutique Cadeaux Personnalisés",
+          "sydigital": "SyDigital — Agence Digitale Créative",
+          "blogify": "Blogify — Plateforme de Blog Intelligente",
+          "apprentis": "Apprentis Center — Plateforme d’Apprentissage des Langues",
+          "msmvoyages": "MSM Voyages — Site Web d’Agence de Voyage"
+        },
+        "descriptions": {
+          "selfiecadeau": "Une boutique en ligne permettant aux utilisateurs de personnaliser des cadeaux abordables avec leurs photos, textes et designs. Inclut la gestion des produits, un système de coupons et des notifications email automatisées.",
+          "sydigital": "Un site moderne pour une agence digitale présentant ses services en conception web, SEO et branding, avec une interface élégante et un design responsive.",
+          "blogify": "Une plateforme de blogging permettant de créer, gérer et partager facilement des articles, avec une interface d’administration, le téléversement d’images et un système de tags.",
+          "apprentis": "Le site d’un centre de formation linguistique présentant les cours, enseignants et inscriptions, avec un design clair et un support multilingue.",
+          "msmvoyages": "Un site web pour une agence de voyages mettant en avant les destinations, formules et demandes en ligne, conçu avec simplicité et élégance."
+        },
+        "previewButton": "Voir le site",
+        "githubButton": "Dépôt Github"
+      },
+      "button": "Voir plus de projets"
+    },
     "cta": {
       "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
       "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",

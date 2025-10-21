@@ -4,4 +4,18 @@ export type SkillType = {
   name: string;
   proficiency: "Beginner" | "Intermediate" | "Advanced" | "Expert";
   logo: string;
+  type: "Frontend" | "Backend" | "Tools";
 };
+
+export type ProjectType = {
+  title: string;
+  description: string;
+  image: string;
+  video: string;
+  stacks: string[];
+  url: string;
+  publishedAt: Date;
+  github: string;
+  isOnline: boolean;
+  isFavorite: boolean;
+}

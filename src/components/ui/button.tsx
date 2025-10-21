@@ -17,7 +17,7 @@ const buttonVariants = cva(
 
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
-        link: "text-primary underline-offset-4 hover:underline",
+        link: "text-primary !px-0 !py-0 hover:text-cyan-600 dark:hover:text-cyan-300 underline-offset-4 hover:underline",
         primary:
           "bg-cyan-500/10 text-cyan-600 dark:text-cyan-300 border border-cyan-600 dark:border-cyan-500/30 rounded-full font-semibold tracking-wide transition-all duration-300 ease-in-out hover:bg-cyan-500/20 dark:hover:shadow-[0_0_20px_theme(colors.cyan.500/50%)] focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-black cursor-pointer",
         secondary:

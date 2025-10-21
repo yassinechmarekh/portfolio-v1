@@ -1,0 +1,86 @@
+"use client";
+
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import React from "react";
+import { Button } from "./ui/button";
+import Link from "next/link";
+import { ExternalLink, Github } from "lucide-react";
+import { Parag } from "./text";
+import { ProjectType } from "@/types";
+
+interface ProjectCardProps {
+  project: ProjectType;
+}
+
+const ProjectCard = ({ project }: ProjectCardProps) => {
+  return (
+    <div
+      className="grid  gap-4 group rounded-md"
+      onMouseEnter={(e) => {
+        const video = e.currentTarget.querySelector("video");
+        if (video) {
+          video.play();
+        }
+      }}
+      onMouseLeave={(e) => {
+        const video = e.currentTarget.querySelector("video");
+        if (video) {
+          video.pause();
+          video.currentTime = 0;
+        }
+      }}
+    >
+      <div className="aspect-video relative">
+        <Image
+          alt={project.title}
+          width={100}
+          height={100}
+          priority
+          src={project.image}
+          className="size-full object-cover rounded-md transition-opacity duration-300 group-hover:opacity-0"
+        />
+
+        <video
+          className="absolute size-full inset-0 object-cover rounded-md opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          src={project.video}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+      </div>
+
+      <div className="space-y-2 sm:space-y-1">
+        <h2 className="font-medium text-sm xs:text-base">{project.title}</h2>
+
+        <span className={"text-xs text-cyan-600 dark:text-cyan-300"}>
+          {project.stacks.join(" / ")}
+        </span>
+
+        <Parag className={cn("line-clamp-6 sm:line-clamp-3 !mt-4")}>
+          {project.description}
+        </Parag>
+
+        <div className="flex items-center gap-4 !mt-2">
+          {project.isOnline && (
+            <Button variant={"link"} asChild>
+              <Link href={project.url}>
+                <ExternalLink size={12} />
+                <span> Live Preview</span>
+              </Link>
+            </Button>
+          )}
+          <Button variant={"link"} asChild>
+            <Link href={project.github}>
+              <Github size={12} />
+              <span>Github Repository</span>
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCard;

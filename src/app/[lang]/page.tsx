@@ -4,6 +4,7 @@ import { MenuLinks } from "@/lib/constants";
 import { getLocales } from "@/lib/locales";
 import AboutHome from "@/sections/home/about-home";
 import HeroHome from "@/sections/home/hero-home";
+import ProjectsHome from "@/sections/home/projects-home";
 import SkillsHome from "@/sections/home/skills-home";
 import { LocaleType } from "@/types";
 import { cookies } from "next/headers";
@@ -21,6 +22,7 @@ export default async function Home({ params }: HomeProps) {
       <HeroHome lang={lang} />
       <AboutHome aboutContent={locales.home.about} />
       <SkillsHome skillsContent={locales.home.skills} />
+      <ProjectsHome lang={lang} projectsContent={locales.home.projects} />
       <section id={MenuLinks.CONTACT}>
         <CTA
           title={locales.home.cta.title}

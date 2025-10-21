@@ -68,6 +68,29 @@
       "title": "My Skills",
       "description": "Explore my range of technical skills, from front-end design to back-end development, showcasing my ability to build efficient, modern, and user-friendly web solutions."
     },
+    "projects": {
+      "title": "My Projects",
+      "description": "Discover a selection of my most impactful projects, highlighting my expertise in full-stack development, modern UI design, and efficient web architecture.",
+      "projectItems": {
+        "titles": {
+          "selfiecadeau": "Selfie Cadeau — Personalized Gift E-commerce",
+          "sydigital": "SyDigital — Creative Digital Agency",
+          "blogify": "Blogify — Smart Blogging Platform",
+          "apprentis": "Apprentis Center — Language Learning Platform",
+          "msmvoyages": "MSM Voyages — Travel Agency Website"
+        },
+        "descriptions": {
+          "selfiecadeau": "An online store that allows users to customize affordable gifts with photos, text, and designs. Features include product management, coupon system, and automated email notifications.",
+          "sydigital": "A modern digital agency website showcasing services in web design, SEO, and branding, with a sleek interface and responsive design.",
+          "blogify": "A blogging platform that enables users to create, manage, and share blog posts easily, including admin management, image uploads, and tag systems.",
+          "apprentis": "A language tutoring center website offering information on courses, teachers, and registration with multilingual support and a clean design.",
+          "msmvoyages": "A travel agency website designed to present destinations, packages, and online inquiries with a focus on simplicity and elegance."
+        },
+        "previewButton": "Live Preview",
+        "githubButton": "Github Repository"
+      },
+      "button": "View More Projects"
+    },
     "cta": {
       "title": "Let’s Build Something Amazing Together",
       "description": "I’m always open to new projects, collaborations, or just a friendly chat about code.",

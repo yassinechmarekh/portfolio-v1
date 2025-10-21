@@ -8,6 +8,7 @@ import SplashCursor from "@/components/react-bits/SplashCursor";
 import { getLocales } from "@/lib/locales";
 import { LocaleType } from "@/types";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -46,6 +47,7 @@ export default async function RootLayout({
           {/* <SplashCursor /> */}
           <Header lang={lang} menu={locales.header.navigation} />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

@@ -1,3 +1,5 @@
+import { Github, Instagram, Linkedin } from "lucide-react";
+
 export enum Locales {
   ENGLISH = "en",
   FRENCH = "fr",
@@ -5,7 +7,7 @@ export enum Locales {
 
 export enum CookiesKey {
   THEME = "theme",
-  LOCALE = "locale"
+  LOCALE = "locale",
 }
 
 export enum MenuLinks {
@@ -15,3 +17,21 @@ export enum MenuLinks {
   PROJECTS = "projects",
   CONTACT = "contact",
 }
+
+export const socialLinks = [
+  {
+    name: "GitHub",
+    url: "https://github.com",
+    icon: Github,
+  },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com",
+    icon: Linkedin,
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com",
+    icon: Instagram,
+  },
+];

@@ -1,4 +1,6 @@
+import CTA from "@/components/cta";
 import Header from "@/components/header";
+import { MenuLinks } from "@/lib/constants";
 import { getLocales } from "@/lib/locales";
 import AboutHome from "@/sections/home/about-home";
 import HeroHome from "@/sections/home/hero-home";
@@ -18,7 +20,14 @@ export default async function Home({ params }: HomeProps) {
     <div>
       <HeroHome lang={lang} />
       <AboutHome aboutContent={locales.home.about} />
-      <SkillsHome />
+      <SkillsHome skillsContent={locales.home.skills} />
+      <section id={MenuLinks.CONTACT}>
+        <CTA
+          title={locales.home.cta.title}
+          parag={locales.home.cta.description}
+          button={locales.home.cta.button}
+        />
+      </section>
     </div>
   );
 }

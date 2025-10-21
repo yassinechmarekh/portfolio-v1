@@ -63,6 +63,15 @@
         }
       ],
       "button": "Discover More"
+    },
+    "skills": {
+      "title": "My Skills",
+      "description": "Explore my range of technical skills, from front-end design to back-end development, showcasing my ability to build efficient, modern, and user-friendly web solutions."
+    },
+    "cta": {
+      "title": "Let’s Build Something Amazing Together",
+      "description": "I’m always open to new projects, collaborations, or just a friendly chat about code.",
+      "button": "📩 Contact Me"
     }
   }
 }

@@ -141,4 +141,7 @@
   .menu-item-inactive {
     @apply hover:bg-white dark:hover:bg-cyan-500/40 hover:border hover:border-slate-700 dark:hover:border-cyan-300 text-slate-700 dark:text-white dark:hover:text-cyan-300;
   }
+  .test {
+    background-color: radial-gradient(circle, rgb(0, 217, 255) 0%, rgba(59, 130, 246, 0.4) 50%, transparent 70%);
+  }
 }

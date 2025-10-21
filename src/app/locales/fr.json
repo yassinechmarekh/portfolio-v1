@@ -63,6 +63,15 @@
         }
       ],
       "button": "Savoir Plus"
+    },
+    "skills": {
+      "title": "Mes Compétences",
+      "description": "Découvrez l’étendue de mes compétences techniques, du design front-end au développement back-end, illustrant ma capacité à créer des solutions web modernes, efficaces et conviviales."
+    },
+    "cta": {
+      "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
+      "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
+      "button": "📩 Me Contacter"
     }
   }
 }

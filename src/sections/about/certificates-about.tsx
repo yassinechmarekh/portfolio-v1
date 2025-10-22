@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { LocaleType } from "@/types";
 import getCertificates from "@/data/certificates";
+import { AppRoutes } from "@/lib/constants";
 
 interface CertificatesAboutProps {
   lang: LocaleType;
@@ -20,7 +21,9 @@ const CertificatesAbout = async ({ lang }: CertificatesAboutProps) => {
     <section>
       <Container>
         <Title
-          className={"text-lg xs:text-xl md:text-2xl xl:text-3xl font-bold text-cyan-500 dark:text-cyan-300"}
+          className={
+            "text-lg xs:text-xl md:text-2xl xl:text-3xl font-bold text-cyan-500 dark:text-cyan-300"
+          }
         >
           Certificates
         </Title>
@@ -34,15 +37,13 @@ const CertificatesAbout = async ({ lang }: CertificatesAboutProps) => {
               key={index}
               className={"last:block last:lg:hidden last:2xl:block"}
             >
-              <CertificateCard
-                certificate={certificate}
-              />
+              <CertificateCard certificate={certificate} />
             </div>
           ))}
         </div>
         <div className={"flex justify-center"}>
           <Button variant={"secondary"} asChild>
-            <Link href={"/"}>View More</Link>
+            <Link href={`/${lang}/${AppRoutes.CERTIFICATES}`}>View More</Link>
           </Button>
         </div>
       </Container>

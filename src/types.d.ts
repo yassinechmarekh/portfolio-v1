@@ -25,5 +25,5 @@ export type CertificateType = {
   title: string;
   platform: string;
   isFavorite: boolean;
-  date: Date;
+  type: "Frontend" | "Backend" | "Tools";
 }

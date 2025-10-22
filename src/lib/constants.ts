@@ -21,6 +21,8 @@ export enum MenuLinks {
 export enum AppRoutes {
   ROOT = "/",
   ABOUT = "about",
+  PROJECTS = "projects",
+  CERTIFICATES = "certificates",
 }
 
 export const socialLinks = [

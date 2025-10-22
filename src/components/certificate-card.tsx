@@ -8,7 +8,7 @@ interface CertificateCardProps {
 
 const CertificateCard = ({ certificate }: CertificateCardProps) => {
   return (
-    <div className="bg-gray-100 dark:bg-background/80 backdrop-blur-lg border hover:border-slate-700/50 dark:hover:border-cyan-300 rounded-lg hover:shadow-md shadow-slate-700/50 dark:shadow-cyan-300 transition-shadow flex flex-col group">
+    <div className="bg-gray-100 dark:bg-background/80 backdrop-blur-lg border hover:border-slate-700/50 dark:hover:border-cyan-300 rounded-lg hover:shadow-md shadow-slate-700/50 dark:shadow-cyan-300/50 transition-shadow flex flex-col group">
       <div
         className="border-b border-gray-200/80 rounded-t-lg overflow-hidden"
       >

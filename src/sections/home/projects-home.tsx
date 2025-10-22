@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "@/components/container";
-import { MenuLinks } from "@/lib/constants";
+import { AppRoutes, MenuLinks } from "@/lib/constants";
 import HeaderSection from "@/components/header-section";
 import ProjectCard from "@/components/project-card";
 import projects from "@/data/projects";
@@ -32,7 +32,7 @@ const ProjectsHome = async ({ projectsContent, lang }: ProjectsHomeProps) => {
         </div>
         <div className={"flex justify-center"}>
           <Button variant={"secondary"} asChild>
-            <Link href={"/"}>{projectsContent.button}</Link>
+            <Link href={`/${lang}/${AppRoutes.PROJECTS}`}>{projectsContent.button}</Link>
           </Button>
         </div>
       </Container>

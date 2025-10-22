@@ -184,8 +184,13 @@
     "noResult": "No projects found. Try adjusting your search or filters!"
   },
   "certificates": {
+    "title": "My Certificates",
+    "description": "Explore my professional certifications by category.",
     "items": {
       "react": "Learn React Cource"
-    }
+    },
+    "all": "All",
+    "tools": "Tools",
+    "noResult": "No certificates found in this category."
   }
 }

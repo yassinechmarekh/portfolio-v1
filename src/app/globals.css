@@ -42,6 +42,7 @@
   --radius-xl: calc(var(--radius) + 4px);
   --breakpoint-xs: 400px;
   --animate-float: var(--animate-float);
+  --animate-fadeInUp: var(--animate-fadeInUp);
 }
 
 :root {
@@ -78,6 +79,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --animate-float: float 1s ease-in-out infinite;
+  --animate-fadeInUp: fadeInUp 1s ease-in-out forwards;
 }
 
 .dark {
@@ -113,6 +115,7 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   --animate-float: float 1s ease-in-out infinite;
+  --animate-fadeInUp: fadeInUp 1s ease-in-out forwards;
 }
 
 @keyframes float {
@@ -122,6 +125,17 @@
   }
   50% {
     transform: translateY(-8px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

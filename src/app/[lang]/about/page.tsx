@@ -30,7 +30,7 @@ const AboutPage = async ({ params }: AboutPageProps) => {
       <HeroAbout heroContent={about.hero} />
       <EducationSection lang={lang} />
       <ExperienceSection lang={lang} />
-      <SkillsAbout />
+      <SkillsAbout lang={lang} />
       <CertificatesAbout lang={lang} />
       <CTA
           title={"Let’s Build Something Amazing Together"}

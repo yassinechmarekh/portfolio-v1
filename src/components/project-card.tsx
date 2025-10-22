@@ -8,12 +8,17 @@ import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
 import { Parag } from "./text";
 import { ProjectType } from "@/types";
+import { usePathname } from "next/navigation";
 
 interface ProjectCardProps {
   project: ProjectType;
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+  const pathname = usePathname();
+  const segments = pathname.split("/");
+  const lang = segments[1];
+
   return (
     <div
       className="grid  gap-4 group rounded-md"
@@ -55,7 +60,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <h2 className="font-medium text-sm xs:text-base">{project.title}</h2>
 
         <span className={"text-xs text-cyan-600 dark:text-cyan-300"}>
-          {project.stacks.join(" / ")}
+          {project.stack.join(" / ")}
         </span>
 
         <Parag className={cn("line-clamp-6 sm:line-clamp-3 !mt-4")}>
@@ -67,14 +72,22 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             <Button variant={"link"} asChild>
               <Link href={project.url}>
                 <ExternalLink size={12} />
-                <span> Live Preview</span>
+                {lang === "fr" ? (
+                  <span>Voir le site</span>
+                ) : (
+                  <span>Live Preview</span>
+                )}
               </Link>
             </Button>
           )}
           <Button variant={"link"} asChild>
             <Link href={project.github}>
               <Github size={12} />
-              <span>Github Repository</span>
+              {lang === "fr" ? (
+                <span>Dépôt Github</span>
+              ) : (
+                <span>Github Repository</span>
+              )}
             </Link>
           </Button>
         </div>

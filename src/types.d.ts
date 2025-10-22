@@ -12,7 +12,7 @@ export type ProjectType = {
   description: string;
   image: string;
   video: string;
-  stacks: string[];
+  stack: string[];
   url: string;
   publishedAt: Date;
   github: string;

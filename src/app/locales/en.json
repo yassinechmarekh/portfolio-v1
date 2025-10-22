@@ -1,8 +1,4 @@
 {
-  "navigation": {
-    "home": "Home",
-    "about": "About"
-  },
   "header": {
     "navigation": {
       "home": "Home",
@@ -87,7 +83,7 @@
       "jobPost": "Full Stack Developer",
       "aboutText": [
         "I build immersive, high-performance web experiences combining modern technologies, <bold>clean design</bold>, and <bold>innovative solutions</bold>.",
-        "Feel free to explore my resume. <link href=\"https://yassine-chmarekh.vercel.app/assets/files/CV-yassine-chmarekh.pdf\">View My Resume</link>",
+        "Feel free to explore my resume. <link href=\"/pdfs/CV-yassine-chmarekh.pdf\">View My Resume</link>",
         "Follow me on my social media :"
       ]
     },
@@ -153,6 +149,11 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "tools": "Tools & Others"
+    },
+    "cta": {
+      "title": "Let’s Build Something Amazing Together",
+      "description": "I’m always open to new projects, collaborations, or just a friendly chat about code.",
+      "button": "📩 Contact Me"
     }
   },
   "projects": {
@@ -181,7 +182,12 @@
       "sort": "Sort by Newest",
       "clear": "Clear All Filters"
     },
-    "noResult": "No projects found. Try adjusting your search or filters!"
+    "noResult": "No projects found. Try adjusting your search or filters!",
+    "cta": {
+      "title": "Let’s Build Something Amazing Together",
+      "description": "I’m always open to new projects, collaborations, or just a friendly chat about code.",
+      "button": "📩 Contact Me"
+    }
   },
   "certificates": {
     "title": "My Certificates",
@@ -191,6 +197,11 @@
     },
     "all": "All",
     "tools": "Tools",
-    "noResult": "No certificates found in this category."
+    "noResult": "No certificates found in this category.",
+    "cta": {
+      "title": "Let’s Build Something Amazing Together",
+      "description": "I’m always open to new projects, collaborations, or just a friendly chat about code.",
+      "button": "📩 Contact Me"
+    }
   }
 }

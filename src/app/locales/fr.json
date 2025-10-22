@@ -1,8 +1,4 @@
 {
-  "navigation": {
-    "home": "Accueil",
-    "about": "À propos"
-  },
   "header": {
     "navigation": {
       "home": "Accueil",
@@ -87,7 +83,7 @@
       "jobPost": "Développeur Full Stack",
       "aboutText": [
         "Je conçois des expériences web immersives et performantes en combinant les technologies modernes, un <bold>design épuré</bold> et des <bold>solutions innovantes</bold>.",
-        "N’hésitez pas à consulter mon CV. <link href=\"https://yassine-chmarekh.vercel.app/assets/files/CV-yassine-chmarekh.pdf\">Voir mon CV</link>",
+        "N’hésitez pas à consulter mon CV. <link href=\"/pdfs/CV-yassine-chmarekh.pdf\">Voir mon CV</link>",
         "Suivez-moi sur mes réseaux sociaux :"
       ]
     },
@@ -153,6 +149,11 @@
       "frontend": "Frontend",
       "backend": "Backend",
       "tools": "Outils et Autres"
+    },
+    "cta": {
+      "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
+      "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
+      "button": "📩 Me Contacter"
     }
   },
   "projects": {
@@ -181,7 +182,12 @@
       "sort": "Trier par les plus récents",
       "clear": "Réinitialiser les filtres"
     },
-    "noResult": "Aucun projet trouvé. Essayez de modifier votre recherche ou vos filtres !"
+    "noResult": "Aucun projet trouvé. Essayez de modifier votre recherche ou vos filtres !",
+    "cta": {
+      "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
+      "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
+      "button": "📩 Me Contacter"
+    }
   },
   "certificates": {
     "title": "Mes Certificats",
@@ -191,6 +197,11 @@
     },
     "all": "Tout",
     "tools": "Outils",
-    "noResult": "Aucun certificat trouvé dans cette catégorie."
+    "noResult": "Aucun certificat trouvé dans cette catégorie.",
+    "cta": {
+      "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
+      "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
+      "button": "📩 Me Contacter"
+    }
   }
 }

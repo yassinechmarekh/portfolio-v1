@@ -1,5 +1,4 @@
 import CTA from "@/components/cta";
-import Header from "@/components/header";
 import { MenuLinks } from "@/lib/constants";
 import { getLocales } from "@/lib/locales";
 import AboutHome from "@/sections/home/about-home";
@@ -7,7 +6,11 @@ import HeroHome from "@/sections/home/hero-home";
 import ProjectsHome from "@/sections/home/projects-home";
 import SkillsHome from "@/sections/home/skills-home";
 import { LocaleType } from "@/types";
-import { cookies } from "next/headers";
+
+export const metadata = {
+  description:
+    "Welcome to my portfolio! I'm Yassine Chmarekh, a web developer passionate about creating modern, high-performance digital experiences.",
+};
 
 interface HomeProps {
   params: Promise<{ lang: LocaleType }>;
@@ -19,7 +22,7 @@ export default async function Home({ params }: HomeProps) {
 
   return (
     <div>
-      <HeroHome lang={lang} />
+      <HeroHome lang={lang} heroContent={locales.home.hero} />
       <AboutHome lang={lang} aboutContent={locales.home.about} />
       <SkillsHome skillsContent={locales.home.skills} />
       <ProjectsHome lang={lang} projectsContent={locales.home.projects} />

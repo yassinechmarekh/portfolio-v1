@@ -7,6 +7,12 @@ import { LocaleType } from "@/types";
 import ProjectsList from "@/sections/projects/projects-list";
 import getProjects from "@/data/projects";
 
+export const metadata = {
+  title: "Projects",
+  description:
+    "Browse a selection of my recent web projects — modern, performant applications built with the latest technologies.",
+};
+
 interface ProjectsPageProps {
   params: Promise<{ lang: LocaleType }>;
 }
@@ -27,11 +33,9 @@ const ProjectsPage = async ({ params }: ProjectsPageProps) => {
       </section>
       <ProjectsList allProjects={allProjects} localeContent={projects} />
       <CTA
-        title={"Let’s Build Something Amazing Together"}
-        parag={
-          "I’m always open to new projects, collaborations, or just a friendly chat about code."
-        }
-        button={"📩 Contact Me"}
+        title={projects.cta.title}
+        parag={projects.cta.description}
+        button={projects.cta.button}
       />
     </div>
   );

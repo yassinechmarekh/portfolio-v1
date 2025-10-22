@@ -10,6 +10,12 @@ import CTA from "@/components/cta";
 import CertificatesAbout from "@/sections/about/certificates-about";
 import SkillsAbout from "@/sections/about/skills-about";
 
+export const metadata = {
+  title: "About",
+  description:
+    "Learn more about me — my background, skills, and passion for modern web development using technologies like Next.js, React and Node.js.",
+};
+
 interface AboutPageProps {
   params: Promise<{ lang: LocaleType }>;
 }
@@ -21,10 +27,7 @@ const AboutPage = async ({ params }: AboutPageProps) => {
     <div className={"mt-10 md:mt-30 space-y-10"}>
       <section>
         <Container>
-          <HeaderSection
-            title={about.title}
-            description={about.description}
-          />
+          <HeaderSection title={about.title} description={about.description} />
         </Container>
       </section>
       <HeroAbout heroContent={about.hero} />
@@ -33,10 +36,10 @@ const AboutPage = async ({ params }: AboutPageProps) => {
       <SkillsAbout lang={lang} />
       <CertificatesAbout lang={lang} />
       <CTA
-          title={"Let’s Build Something Amazing Together"}
-          parag={"I’m always open to new projects, collaborations, or just a friendly chat about code."}
-          button={"📩 Contact Me"}
-        />
+        title={about.cta.title}
+        parag={about.cta.description}
+        button={about.cta.button}
+      />
     </div>
   );
 };

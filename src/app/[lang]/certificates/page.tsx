@@ -7,6 +7,12 @@ import CertificatesList from "@/sections/certificates/certificates-list";
 import { LocaleType } from "@/types";
 import getCertificates from "@/data/certificates";
 
+export const metadata = {
+  title: "Certificates",
+  description:
+    "Explore my professional certificates showcasing my expertise in web development, React, JavaScript, and modern technologies.",
+};
+
 interface CertificatesPageProps {
   params: Promise<{ lang: LocaleType }>;
 }
@@ -26,13 +32,14 @@ const CertificatesPage = async ({ params }: CertificatesPageProps) => {
           />
         </Container>
       </section>
-      <CertificatesList allCertificates={allCertificates} localeContent={certificates} />
+      <CertificatesList
+        allCertificates={allCertificates}
+        localeContent={certificates}
+      />
       <CTA
-        title={"Let’s Build Something Amazing Together"}
-        parag={
-          "I’m always open to new projects, collaborations, or just a friendly chat about code."
-        }
-        button={"📩 Contact Me"}
+        title={certificates.cta.title}
+        parag={certificates.cta.description}
+        button={certificates.cta.button}
       />
     </div>
   );

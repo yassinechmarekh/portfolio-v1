@@ -34,8 +34,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="aspect-video relative">
         <Image
           alt={project.title}
-          width={100}
-          height={100}
+          width={600}
+          height={600}
           priority
           src={project.image}
           className="size-full object-cover rounded-md transition-opacity duration-300 group-hover:opacity-0"

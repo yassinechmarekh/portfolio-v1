@@ -41,7 +41,7 @@
           "Experienced self-taught developer with over <bold>5+ years</bold> of crafting advanced SaaS products and B2B solutions, specializing in transforming imaginative designs into robust, scalable web solutions that set new standards.",
           "I love building tools that are <bold>user friendly, simple</bold> and <bold>delightful</bold>.",
           "Through these experiences, I had the opportunity to work with both small and large companies, as well as specialized and cross-functional teams across different time zones & developed a working style that prioritizes <bold>flexibility, clarity</bold> and <bold>collaboration</bold>.",
-          "I'm currently looking for a new role as a developer. <link>Hire me?</link>"
+          "I'm currently looking for a new role as a developer. <link href=\"mailto:yassinechmarekh88@gmail.com\">Hire me?</link>"
         ]
       },
       "cards": [
@@ -95,6 +95,87 @@
       "title": "Let’s Build Something Amazing Together",
       "description": "I’m always open to new projects, collaborations, or just a friendly chat about code.",
       "button": "📩 Contact Me"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description": "A Glimpse into My Journey, Skills, and Experience.",
+    "hero": {
+      "hi": "Hi, I’m",
+      "jobPost": "Full Stack Developer",
+      "aboutText": [
+        "I build immersive, high-performance web experiences combining modern technologies, <bold>clean design</bold>, and <bold>innovative solutions</bold>.",
+        "Feel free to explore my resume. <link href=\"https://yassine-chmarekh.vercel.app/assets/files/CV-yassine-chmarekh.pdf\">View My Resume</link>",
+        "Follow me on my social media :"
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "location": "Settat - Hassan 1st University",
+          "title": "Faculty of Sciences and Techniques of Settat (FSTS)",
+          "subTitle": "Bachelor’s Degree in Computer Engineering (Sciences and Techniques)",
+          "startDate": "September 2023",
+          "endDate": "September 2024"
+        },
+        {
+          "location": "Settat - Hassan 1st University",
+          "title": "Faculty of Sciences and Techniques of Settat (FSTS)",
+          "subTitle": "University Diploma in Science and Technology (DEUST)",
+          "startDate": "September 2020",
+          "endDate": "September 2023"
+        },
+        {
+          "location": "Casablanca - Hay Hassani",
+          "title": "Badr High School",
+          "subTitle": "Baccalaureate in Physics and Chemistry",
+          "startDate": "September 2019",
+          "endDate": "September 2020"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "items": [
+        {
+          "title": "Freelance Experience – E-commerce Website Development",
+          "subTitle": "Full Stack Developer",
+          "location": "Online",
+          "startDate": "July 2024",
+          "endDate": "November 2024",
+          "details": [
+            "Developed a complete e-commerce website, including product management, user authentication, and secure payment integration.",
+            "Designed a responsive and modern user interface ensuring smooth navigation and a high-quality user experience.",
+            "Implemented a Laravel-based backend and optimized database queries for better performance.",
+            "Collaborated with the client to define requirements, propose features, and deliver the final product on schedule."
+          ]
+        },
+        {
+          "title": "MT Informatique – Final Year Internship Project",
+          "subTitle": "Full Stack Developer",
+          "location": "Online",
+          "startDate": "April 2024",
+          "endDate": "July 2024",
+          "details": [
+            "Developed a web application as part of the final academic project, using Laravel and modern front-end technologies.",
+            "Integrated APIs and optimized database structures for efficient data handling.",
+            "Contributed to both front-end and back-end development, ensuring functionality and scalability.",
+            "Documented the project and presented it successfully to the academic jury."
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Tools & Others"
+    }
+  },
+  "certificates": {
+    "items": {
+      "react": "Learn React Cource"
     }
   }
 }

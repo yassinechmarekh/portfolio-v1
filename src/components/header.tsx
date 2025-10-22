@@ -30,7 +30,7 @@ const Header = ({ lang, menu }: HeaderProps) => {
   const { setTheme, theme } = useTheme();
   const pathname = usePathname();
 
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("");
 
   const navItems = [
     { id: "home", icon: Home, label: menu.home, href: `/${lang}/#${MenuLinks.HOME}` },

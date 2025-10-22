@@ -41,7 +41,7 @@
           "Développeur autodidacte expérimenté avec plus de <bold>5 ans</bold> d'expérience dans la création de produits SaaS avancés et de solutions B2B, spécialisé dans la transformation de designs imaginatifs en solutions web robustes et évolutives qui établissent de nouveaux standards.",
           "J'aime créer des outils <bold>simples, intuitifs</bold> et <bold>agréables</bold> à utiliser.",
           "Grâce à ces expériences, j'ai eu l'occasion de travailler avec des entreprises de toutes tailles, ainsi qu'avec des équipes spécialisées et pluridisciplinaires à travers différents fuseaux horaires, développant ainsi un style de travail basé sur la <bold>flexibilité, la clarté</bold> et la <bold>collaboration</bold>.",
-          "Je suis actuellement à la recherche d'un nouveau poste en tant que développeur. <link>Me recruter ?</link>"
+          "Je suis actuellement à la recherche d'un nouveau poste en tant que développeur. <link href=\"mailto:yassinechmarekh88@gmail.com\">Me recruter ?</link>"
         ]
       },
       "cards": [
@@ -95,6 +95,87 @@
       "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
       "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
       "button": "📩 Me Contacter"
+    }
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "description": "Un aperçu de mon parcours, de mes compétences et de mon expérience.",
+    "hero": {
+      "hi": "Bonjour, je suis",
+      "jobPost": "Développeur Full Stack",
+      "aboutText": [
+        "Je conçois des expériences web immersives et performantes en combinant les technologies modernes, un <bold>design épuré</bold> et des <bold>solutions innovantes</bold>.",
+        "N’hésitez pas à consulter mon CV. <link href=\"https://yassine-chmarekh.vercel.app/assets/files/CV-yassine-chmarekh.pdf\">Voir mon CV</link>",
+        "Suivez-moi sur mes réseaux sociaux :"
+      ]
+    },
+    "education": {
+      "title": "Éducation",
+      "items": [
+        {
+          "location": "Settat - Université Hassan 1er",
+          "title": "Faculté des Sciences et Techniques Settat (FSTS)",
+          "subTitle": "Licence Sciences et Techniques en Génie Informatique",
+          "startDate": "Septembre 2023",
+          "endDate": "Septembre 2024"
+        },
+        {
+          "location": "Settat - Université Hassan 1er",
+          "title": "Faculté des Sciences et Techniques Settat (FSTS)",
+          "subTitle": "Diplôme d’Études Universitaire en Science et Technique (DEUST)",
+          "startDate": "Septembre 2020",
+          "endDate": "Septembre 2023"
+        },
+        {
+          "location": "Casablanca - Hay Hassani",
+          "title": "Lycée Badr",
+          "subTitle": "Baccalauréat Physique-Chimie",
+          "startDate": "Septembre 2019",
+          "endDate": "Septembre 2020"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Expériences",
+      "items": [
+        {
+          "title": "Expérience en Freelance - Développemnt d'un site e-commerce",
+          "subTitle": "Développeur full stack",
+          "location": "En ligne",
+          "startDate": "Juillet 2024",
+          "endDate": "Novembre 2024",
+          "details": [
+            "Assisted in the design and development of client websites under the guidance of senior designers.",
+            "Maintained and updated existing websites, ensuring they met modern web standards.",
+            "Participated in client meetings to gather requirements and present design proposals.",
+            "Developed basic HTML and CSS coding skills to support design projects."
+          ]
+        },
+        {
+          "title": "MT Informatique - Stage du projet de fin d’études",
+          "subTitle": "Développeur full stack",
+          "location": "En ligne",
+          "startDate": "Avril 2024",
+          "endDate": "Juillet 2024",
+          "details": [
+            "Assisted in the design and development of client websites under the guidance of senior designers.",
+            "Maintained and updated existing websites, ensuring they met modern web standards.",
+            "Participated in client meetings to gather requirements and present design proposals.",
+            "Developed basic HTML and CSS coding skills to support design projects."
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Compétences",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "tools": "Outils et Autres"
+    }
+  },
+  "certificates": {
+    "items": {
+      "react": "Cours d'apprentissage de React"
     }
   }
 }

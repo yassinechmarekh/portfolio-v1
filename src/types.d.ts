@@ -19,3 +19,11 @@ export type ProjectType = {
   isOnline: boolean;
   isFavorite: boolean;
 }
+
+export type CertificateType = {
+  image: string;
+  title: string;
+  platform: string;
+  isFavorite: boolean;
+  date: Date;
+}

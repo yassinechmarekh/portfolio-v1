@@ -7,14 +7,16 @@ import ProfileCard from "@/components/react-bits/ProfileCard";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { MenuLinks } from "@/lib/constants";
+import { AppRoutes, MenuLinks } from "@/lib/constants";
 import ParagEffect from "@/components/parag-effect";
+import { LocaleType } from "@/types";
 
 interface AboutHomeProps {
   aboutContent: any;
+  lang: LocaleType
 }
 
-const AboutHome = ({ aboutContent }: AboutHomeProps) => {
+const AboutHome = ({ aboutContent, lang }: AboutHomeProps) => {
   const { theme } = useTheme();
 
   return (
@@ -75,7 +77,7 @@ const AboutHome = ({ aboutContent }: AboutHomeProps) => {
 
             {/* discover more button */}
             <Button variant={"secondary"} className={"mt-4 rounded-sm"} asChild>
-              <Link href={"/"}>{aboutContent.button}</Link>
+              <Link href={`/${lang}/${AppRoutes.ABOUT}`}>{aboutContent.button}</Link>
             </Button>
           </div>
         </div>

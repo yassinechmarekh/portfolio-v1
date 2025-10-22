@@ -20,7 +20,7 @@ export default async function Home({ params }: HomeProps) {
   return (
     <div>
       <HeroHome lang={lang} />
-      <AboutHome aboutContent={locales.home.about} />
+      <AboutHome lang={lang} aboutContent={locales.home.about} />
       <SkillsHome skillsContent={locales.home.skills} />
       <ProjectsHome lang={lang} projectsContent={locales.home.projects} />
       <section id={MenuLinks.CONTACT}>

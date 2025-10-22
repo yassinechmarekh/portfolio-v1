@@ -63,12 +63,12 @@ const CTA = ({ title, parag, button }: CTAProps) => {
           />
 
           {/* Content */}
-          <div className="relative p-10 text-center max-w-5xl">
+          <div className="relative p-10 text-center sm:max-w-5xl">
             <ShinyText
               text={title}
               disabled={false}
               speed={3}
-              className="text-3xl xs:text-4xl md:text-5xl font-bold mb-6"
+              className="text-2xl xs:text-3xl md:text-5xl font-bold mb-6"
             />
             <Parag className="text-base xs:text-lg lg:text-xl text-gray-600 dark:text-gray-400 mx-auto mb-8 text-balance">
               {parag}
@@ -76,7 +76,7 @@ const CTA = ({ title, parag, button }: CTAProps) => {
             <Button
               variant={"secondary"}
               size="lg"
-              className="font-semibold px-8 py-6 text-base xs:text-lg"
+              className="font-semibold px-6 xs:px-8 py-5 xs:py-6 text-base xs:text-lg"
               asChild
             >
               <Link href={"mailto:yassinechmarekh88@gmail.com"}>

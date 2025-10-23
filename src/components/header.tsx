@@ -1,21 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { Button } from "./ui/button";
+import React, { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import Cookies from "js-cookie";
 import { CookiesKey, MenuLinks } from "@/lib/constants";
-import {
-  BookOpen,
-  Code,
-  Grid3x3,
-  Home,
-  ImageIcon,
-  Mail,
-  Moon,
-  Sun,
-  User,
-} from "lucide-react";
+import { BookOpen, Code, Home, Mail, Moon, Sun, User } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -32,33 +21,45 @@ const Header = ({ lang, menu }: HeaderProps) => {
 
   const [activeSection, setActiveSection] = useState("");
 
-  const navItems = [
-    { id: "home", icon: Home, label: menu.home, href: `/${lang}/#${MenuLinks.HOME}` },
-    {
-      id: "about",
-      icon: User,
-      label: menu.about,
-      href: `/${lang}/#${MenuLinks.ABOUT}`,
-    },
-    {
-      id: "skills",
-      icon: Code,
-      label: menu.skills,
-      href: `/${lang}/#${MenuLinks.SKILLS}`,
-    },
-    {
-      id: "projects",
-      icon: BookOpen,
-      label: menu.projects,
-      href: `/${lang}/#${MenuLinks.PROJECTS}`,
-    },
-    {
-      id: "contact",
-      icon: Mail,
-      label: menu.contact,
-      href: `/${lang}/#${MenuLinks.CONTACT}`,
-    },
-  ];
+  useEffect(() => {
+    setActiveSection("");
+  }, [pathname]);
+
+  const navItems = useMemo(
+    () => [
+      {
+        id: "home",
+        icon: Home,
+        label: menu.home,
+        href: `/${lang}/#${MenuLinks.HOME}`,
+      },
+      {
+        id: "about",
+        icon: User,
+        label: menu.about,
+        href: `/${lang}/#${MenuLinks.ABOUT}`,
+      },
+      {
+        id: "skills",
+        icon: Code,
+        label: menu.skills,
+        href: `/${lang}/#${MenuLinks.SKILLS}`,
+      },
+      {
+        id: "projects",
+        icon: BookOpen,
+        label: menu.projects,
+        href: `/${lang}/#${MenuLinks.PROJECTS}`,
+      },
+      {
+        id: "contact",
+        icon: Mail,
+        label: menu.contact,
+        href: `/${lang}/#${MenuLinks.CONTACT}`,
+      },
+    ],
+    [menu, lang]
+  );
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -104,7 +105,7 @@ const Header = ({ lang, menu }: HeaderProps) => {
     handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [navItems]);
 
   return (
     <header className="fixed bottom-6 md:bottom-auto top-auto md:top-6 left-1/2 -translate-x-1/2 flex items-center gap-1 px-2 xs:px-4 py-1 xs:py-1.5 bg-slate-100/70 dark:bg-background/80 border border-slate-700/50 dark:border-white/20 rounded-full backdrop-blur-sm z-50">

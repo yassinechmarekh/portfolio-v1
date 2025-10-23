@@ -16,12 +16,12 @@ async function getLocale(request: NextRequest): Promise<string> {
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
-  // @ts-ignore locales are readonly
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
 
   try {
     return matchLocale(languages, locales, defaultLocale);
   } catch (error) {
+    console.log(error);
     return defaultLocale;
   }
 }

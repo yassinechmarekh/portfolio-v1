@@ -3,13 +3,13 @@ import Container from "@/components/container";
 import { AppRoutes, MenuLinks } from "@/lib/constants";
 import HeaderSection from "@/components/header-section";
 import ProjectCard from "@/components/project-card";
-import projects from "@/data/projects";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { LocaleType } from "@/types";
 import getProjects from "@/data/projects";
 
 interface ProjectsHomeProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   projectsContent: any;
   lang: LocaleType;
 }

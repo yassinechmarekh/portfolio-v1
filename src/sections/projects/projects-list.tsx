@@ -12,6 +12,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 interface ProjectsListProps {
   allProjects: ProjectType[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   localeContent: any;
 }
 
@@ -54,7 +55,7 @@ const ProjectsList = ({ allProjects, localeContent }: ProjectsListProps) => {
           return dateB - dateA;
         }
       });
-  }, [searchTerm, sortOrder, activeFilters]);
+  }, [searchTerm, sortOrder, activeFilters, allProjects]);
 
   const clearFilters = () => {
     setActiveFilters([]);

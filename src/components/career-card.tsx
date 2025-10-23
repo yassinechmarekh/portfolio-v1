@@ -1,4 +1,4 @@
-import { Calendar, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import React from "react";
 
 interface CareerCardProps {

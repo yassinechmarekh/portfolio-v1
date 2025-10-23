@@ -10,10 +10,12 @@ import { Button } from "@/components/ui/button";
 import { AppRoutes, MenuLinks } from "@/lib/constants";
 import ParagEffect from "@/components/parag-effect";
 import { LocaleType } from "@/types";
+import { motion } from "framer-motion";
 
 interface AboutHomeProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   aboutContent: any;
-  lang: LocaleType
+  lang: LocaleType;
 }
 
 const AboutHome = ({ aboutContent, lang }: AboutHomeProps) => {
@@ -27,25 +29,31 @@ const AboutHome = ({ aboutContent, lang }: AboutHomeProps) => {
           description="Who I am, what I do, and what drives me to create."
         />
         <div className={"mt-6 flex flex-col lg:flex-row gap-8 items-center"}>
-          <ProfileCard
-            name={aboutContent.profileCard.fullName}
-            title={aboutContent.profileCard.job}
-            handle={aboutContent.profileCard.user}
-            status={aboutContent.profileCard.status}
-            contactText={aboutContent.profileCard.contact}
-            avatarUrl={
-              theme === "dark"
-                ? "/images/about-home-dark.png"
-                : "/images/about-home-light.png"
-            }
-            showUserInfo={true}
-            enableTilt={true}
-            enableMobileTilt={false}
-            showBehindGradient={false}
-            onContactClick={() =>
-              (window.location.href = "mailto:yassinechmarekh88@gmail.com")
-            }
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.4 }}
+          >
+            <ProfileCard
+              name={aboutContent.profileCard.fullName}
+              title={aboutContent.profileCard.job}
+              handle={aboutContent.profileCard.user}
+              status={aboutContent.profileCard.status}
+              contactText={aboutContent.profileCard.contact}
+              avatarUrl={
+                theme === "dark"
+                  ? "/images/about-home-dark.png"
+                  : "/images/about-home-light.png"
+              }
+              showUserInfo={true}
+              enableTilt={true}
+              enableMobileTilt={false}
+              showBehindGradient={false}
+              onContactClick={() =>
+                (window.location.href = "mailto:yassinechmarekh88@gmail.com")
+              }
+            />
+          </motion.div>
           <div className="space-y-3">
             <h1 className="font-semibold text-lg sm:text-xl font-ubuntu">
               {aboutContent.text.title}
@@ -77,7 +85,9 @@ const AboutHome = ({ aboutContent, lang }: AboutHomeProps) => {
 
             {/* discover more button */}
             <Button variant={"secondary"} className={"mt-4 rounded-sm"} asChild>
-              <Link href={`/${lang}/${AppRoutes.ABOUT}`}>{aboutContent.button}</Link>
+              <Link href={`/${lang}/${AppRoutes.ABOUT}`}>
+                {aboutContent.button}
+              </Link>
             </Button>
           </div>
         </div>

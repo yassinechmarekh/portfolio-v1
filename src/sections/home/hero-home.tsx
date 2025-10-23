@@ -14,6 +14,7 @@ import { LocaleType } from "@/types";
 
 interface HeroHomeProps {
   lang: LocaleType;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   heroContent: any;
 }
 

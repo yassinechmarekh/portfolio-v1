@@ -58,26 +58,25 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: LocaleType }>;
+  params: Promise<{ lang: string }>;
 }>) {
-  const { lang } = await params;
+  const lang = (await params).lang as LocaleType;
   const locales = await getLocales(lang);
 
   const cookieStore = await cookies();
-  const savedTheme = cookieStore.get(CookiesKey.THEME)?.value || null;
+  const savedTheme = cookieStore.get(CookiesKey.THEME)?.value || "dark";
 
   return (
     <html lang={lang}>
       <body className={` ${spaceGrotesk.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme={savedTheme ? savedTheme : "system"}
-          // defaultTheme={savedTheme || "system"}
+          defaultTheme={savedTheme}
           enableSystem
           disableTransitionOnChange
           storageKey={CookiesKey.THEME}
         >
-          {/* <SplashCursor /> */}
+          <SplashCursor />
           <LoaderWrapper>
             <Header lang={lang} menu={locales.header.navigation} />
             {children}

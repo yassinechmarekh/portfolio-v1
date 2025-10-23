@@ -4,7 +4,6 @@ import React from "react";
 import Container from "@/components/container";
 import TiltedCard from "@/components/react-bits/TiltedCard";
 import ParagEffect from "@/components/parag-effect";
-import { Parag } from "@/components/text";
 import { socialLinks } from "@/lib/constants";
 import {
   Tooltip,
@@ -17,6 +16,7 @@ import TrueFocus from "@/components/react-bits/TrueFocus";
 import { useTheme } from "next-themes";
 
 interface HeroAboutProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   heroContent: any;
 }
 

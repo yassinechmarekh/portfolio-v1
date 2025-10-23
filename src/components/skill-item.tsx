@@ -3,6 +3,7 @@
 import React from "react";
 import { useTheme } from "next-themes";
 import { SkillType } from "@/types";
+import Image from "next/image";
 
 interface SkillItemProps {
   skill: SkillType;
@@ -20,12 +21,15 @@ const SkillItem = ({ skill }: SkillItemProps) => {
         className="w-16 h-16 md:w-20 md:h-20 p-3 bg-gray-100 dark:bg-gray-900/50 rounded-full border border-gray-200 dark:border-gray-800/50 flex items-center justify-center transition-all duration-300 group-hover:shadow-cyan-500/30 group-hover:shadow-lg group-hover:border-cyan-500/50 animate-float"
         style={{ animationDuration: `${3 + Math.random() * 2}s` }}
       >
-        <img
+        <Image
           src={`https://cdn.simpleicons.org/${skill.logo}/${
             theme === "dark" ? "white" : "color"
           }`}
           alt={`${skill.name} logo`}
           className="w-10/12 h-10/12 object-contain"
+          width={600}
+          height={600}
+          unoptimized
         />
       </div>
       <div className="absolute -top-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gray-100 dark:bg-gray-900 text-black dark:text-white border border-gray-400 dark:border-0 text-sm rounded-lg px-3 py-1.5 pointer-events-none whitespace-nowrap shadow-lg">

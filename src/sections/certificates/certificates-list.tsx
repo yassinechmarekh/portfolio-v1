@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import Container from "@/components/container";
 import { CertificateType } from "@/types";
 import { Parag } from "@/components/text";
@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 interface CertificatesListProps {
   allCertificates: CertificateType[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   localeContent: any;
 }
 

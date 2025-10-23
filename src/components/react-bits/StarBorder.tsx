@@ -24,9 +24,11 @@ const StarBorder = <T extends React.ElementType = 'button'>({
   return (
     <Component
       className={`star-border-container ${className}`}
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       {...(rest as any)}
       style={{
         padding: `${thickness}px 0`,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ...(rest as any).style
       }}
     >

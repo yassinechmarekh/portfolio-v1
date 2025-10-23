@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Container from "./container";
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -16,20 +16,23 @@ const Loader = ({ loaderTime }: LoaderProps) => {
   const segments = pathname.split("/");
   const lang = segments[1];
 
-  const loadingTexts =
-    lang === "fr"
-      ? [
-          "Initialisation des composants...",
-          "Compilation des ressources...",
-          "Connexion au serveur quantique...",
-          "Déploiement terminé.",
-        ]
-      : [
-          "Initializing Components...",
-          "Compiling Assets...",
-          "Connecting to Quantum Server...",
-          "Deployment Complete.",
-        ];
+  const loadingTexts = useMemo(
+    () =>
+      lang === "fr"
+        ? [
+            "Initialisation des composants...",
+            "Compilation des ressources...",
+            "Connexion au serveur quantique...",
+            "Déploiement terminé.",
+          ]
+        : [
+            "Initializing Components...",
+            "Compiling Assets...",
+            "Connecting to Quantum Server...",
+            "Deployment Complete.",
+          ],
+    [lang]
+  );
 
   useEffect(() => {
     const stepDuration = loaderTime / loadingTexts.length;
@@ -49,7 +52,7 @@ const Loader = ({ loaderTime }: LoaderProps) => {
       clearInterval(interval);
       clearTimeout(timeout);
     };
-  }, []);
+  }, [loaderTime, loadingTexts]);
 
   return (
     <motion.section

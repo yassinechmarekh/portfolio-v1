@@ -18,7 +18,7 @@ interface ProjectsListProps {
 
 const ProjectsList = ({ allProjects, localeContent }: ProjectsListProps) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("desc");
   const [isFiltersOpen, setIsFiltersOpen] = useState(false);
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
 
@@ -69,7 +69,6 @@ const ProjectsList = ({ allProjects, localeContent }: ProjectsListProps) => {
         {/* Search, Sort & Filter Bar */}
         <div
           className="bg-gray-100/80 dark:bg-black/80 backdrop-blur-lg rounded-xl p-4 sm:p-6 mb-12 border border-slate-700/50 dark:border-white/20 animate-fadeInUp"
-          style={{ animationDelay: "0.2s" }}
         >
           {/* Mobile Controls */}
           <div className="md:hidden">

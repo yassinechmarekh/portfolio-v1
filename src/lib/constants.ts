@@ -28,19 +28,19 @@ export enum AppRoutes {
 export const socialLinks = [
   {
     name: "GitHub",
-    url: "https://github.com",
+    url: "https://github.com/yassinechmarekh",
     icon: Github,
     className: "hover:bg-gray-400 hover:text-black",
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com",
+    url: "https://www.linkedin.com/in/yassine-chmarekh",
     icon: Linkedin,
     className: "hover:bg-blue-700 hover:text-white",
   },
   {
     name: "Instagram",
-    url: "https://instagram.com",
+    url: "https://www.instagram.com/yassinechmarekh",
     icon: Instagram,
     className:
       " hover:bg-gradient-to-r from-rose-400 to-red-500 hover:text-white",

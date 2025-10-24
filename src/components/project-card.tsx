@@ -26,6 +26,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         const video = e.currentTarget.querySelector("video");
         if (video) {
           video.play();
+          video.playbackRate = 2;
         }
       }}
       onMouseLeave={(e) => {
@@ -43,7 +44,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           height={600}
           priority
           src={project.image}
-          className="size-full object-cover rounded-md transition-opacity duration-300 group-hover:opacity-0"
+          className="size-full object-cover object-top rounded-md transition-opacity duration-300 group-hover:opacity-0"
         />
 
         <video
@@ -70,7 +71,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <div className="flex items-center gap-4 !mt-2">
           {project.isOnline && (
             <Button variant={"link"} asChild>
-              <Link href={project.url}>
+              <Link href={project.url} target="_blank">
                 <ExternalLink size={12} />
                 {lang === "fr" ? (
                   <span>Voir le site</span>
@@ -81,7 +82,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             </Button>
           )}
           <Button variant={"link"} asChild>
-            <Link href={project.github}>
+            <Link href={project.github} target="_blank">
               <Github size={12} />
               {lang === "fr" ? (
                 <span>Dépôt Github</span>

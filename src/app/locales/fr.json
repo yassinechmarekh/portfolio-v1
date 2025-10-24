@@ -34,16 +34,16 @@
       "text": {
         "title": "Bonjour, je suis Yassine.",
         "parag": [
-          "Développeur autodidacte expérimenté avec plus de <bold>5 ans</bold> d'expérience dans la création de produits SaaS avancés et de solutions B2B, spécialisé dans la transformation de designs imaginatifs en solutions web robustes et évolutives qui établissent de nouveaux standards.",
-          "J'aime créer des outils <bold>simples, intuitifs</bold> et <bold>agréables</bold> à utiliser.",
-          "Grâce à ces expériences, j'ai eu l'occasion de travailler avec des entreprises de toutes tailles, ainsi qu'avec des équipes spécialisées et pluridisciplinaires à travers différents fuseaux horaires, développant ainsi un style de travail basé sur la <bold>flexibilité, la clarté</bold> et la <bold>collaboration</bold>.",
-          "Je suis actuellement à la recherche d'un nouveau poste en tant que développeur. <link href=\"mailto:yassinechmarekh88@gmail.com\">Me recruter ?</link>"
+          "Développeur autodidacte passionné par la création d'applications web et l'apprentissage de nouvelles technologies au quotidien.",
+          "J'aime concevoir des outils <bold>conviviaux, simples</bold> et <bold>agréables</bold> à utiliser.",
+          "Je prends plaisir à travailler sur des projets personnels, à expérimenter de nouveaux frameworks et à améliorer mes compétences en <bold>React, Node.js et Next.js</bold>.",
+          "Je suis actuellement à la recherche d'un nouveau poste en tant que développeur. <link href=\"mailto:yassinechmarekh88@gmail.com\">Me contacter ?</link>"
         ]
       },
       "cards": [
         {
-          "title": "💼 3+ Ans",
-          "description": "D'expérience"
+          "title": "💡 Autodidacte",
+          "description": "Apprenant Passionné"
         },
         {
           "title": "🧠 Full Stack",
@@ -55,10 +55,10 @@
         },
         {
           "title": "🎯 Passion pour",
-          "description": "Applications créatives et évolutives"
+          "description": "Applications Créatives & Scalables"
         }
       ],
-      "button": "Savoir Plus"
+      "button": "Découvrir Plus"
     },
     "skills": {
       "title": "Mes Compétences",
@@ -70,8 +70,8 @@
       "button": "Voir plus de projets"
     },
     "cta": {
-      "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
-      "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
+      "title": "Construisons quelque chose d’incroyable ensemble",
+      "description": "Je suis toujours ouvert à de nouveaux projets, collaborations, ou simplement à discuter autour du code.",
       "button": "📩 Me Contacter"
     }
   },
@@ -123,10 +123,10 @@
           "startDate": "Juillet 2024",
           "endDate": "Novembre 2024",
           "details": [
-            "Assisted in the design and development of client websites under the guidance of senior designers.",
-            "Maintained and updated existing websites, ensuring they met modern web standards.",
-            "Participated in client meetings to gather requirements and present design proposals.",
-            "Developed basic HTML and CSS coding skills to support design projects."
+            "Développement complet d’un site e-commerce avec gestion des produits, authentification des utilisateurs et traitement des commandes avec système de coupons.",
+            "Conception d’une interface utilisateur moderne et responsive offrant une navigation fluide et une expérience agréable.",
+            "Mise en place d’un backend sous Laravel avec un tableau de bord administrateur intuitif pour gérer les produits, catégories et commandes.",
+            "Collaboration étroite avec le client pour définir les besoins, proposer des améliorations et livrer le produit final dans les délais."
           ]
         },
         {
@@ -136,10 +136,10 @@
           "startDate": "Avril 2024",
           "endDate": "Juillet 2024",
           "details": [
-            "Assisted in the design and development of client websites under the guidance of senior designers.",
-            "Maintained and updated existing websites, ensuring they met modern web standards.",
-            "Participated in client meetings to gather requirements and present design proposals.",
-            "Developed basic HTML and CSS coding skills to support design projects."
+            "Développement d’une application web dans le cadre du projet de fin d’études, en utilisant Laravel et des technologies front-end modernes.",
+            "Création d’une plateforme e-commerce complète avec gestion des produits, des catégories et des commandes.",
+            "Mise en place d’un système multi-rôles comprenant trois tableaux de bord : administrateur, employé et client, chacun disposant de fonctionnalités et permissions spécifiques.",
+            "Rédaction de la documentation et présentation réussie du projet devant le jury académique."
           ]
         }
       ]
@@ -151,9 +151,9 @@
       "tools": "Outils et Autres"
     },
     "cta": {
-      "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
-      "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
-      "button": "📩 Me Contacter"
+      "title": "Envie de collaborer avec un développeur passionné ?",
+      "description": "Entrons en contact et transformons vos idées en expériences numériques belles et fonctionnelles.",
+      "button": "🚀 Collaborons Ensemble"
     }
   },
   "projects": {
@@ -161,18 +161,34 @@
     "description": "Découvrez l’ensemble de mes projets professionnels et personnels.",
     "items": {
       "titles": {
-        "selfiecadeau": "Selfie Cadeau — Boutique Cadeaux Personnalisés",
-        "sydigital": "SyDigital — Agence Digitale Créative",
+        "selfiecadeau": "Selfie Cadeau — Boutique de Cadeaux Personnalisés",
+        "sydigital": "SyDigital — Agence de Développement Web Moderne",
         "blogify": "Blogify — Plateforme de Blog Intelligente",
         "apprentis": "Apprentis Center — Plateforme d’Apprentissage des Langues",
-        "msmvoyages": "MSM Voyages — Site Web d’Agence de Voyage"
+        "msmvoyages": "MSM Voyages — Site Web d’Agence de Voyage",
+        "rayshooting": "Ray Shooting — Studio Photographique",
+        "wac": "Wydad Athletic Club — Site Web du Club de Football",
+        "fastexpress": "Fast Express — Landing Page d’Agence de Livraison",
+        "budgetwindowcleanning": "Budget Window Cleaning — Landing Page d’Agence de Nettoyage de Fenêtres",
+        "topico": "Topico — Projet E-commerce Frontend",
+        "bestportlandcleaners": "Best Portland Cleaners — Site Web d’Agence de Nettoyage",
+        "mtinformatique": "MT Informatique — E-commerce de Matériel Informatique",
+        "wordsearchgenerator": "Word Search Generator — Outil de Mots-Croisés AI"
       },
       "descriptions": {
-        "selfiecadeau": "Une boutique en ligne permettant aux utilisateurs de personnaliser des cadeaux abordables avec leurs photos, textes et designs. Inclut la gestion des produits, un système de coupons et des notifications email automatisées.",
-        "sydigital": "Un site moderne pour une agence digitale présentant ses services en conception web, SEO et branding, avec une interface élégante et un design responsive.",
+        "selfiecadeau": "Une boutique en ligne qui permet aux utilisateurs de personnaliser des cadeaux abordables en ajoutant leur propre texte. Elle comprend la gestion des produits, un système de coupons et des notifications par e-mail automatisées.",
+        "sydigital": "Un site web élégant et responsive pour une marque spécialisée dans le développement web, avec un design animé moderne et un support du mode clair et sombre.",
         "blogify": "Une plateforme de blogging permettant de créer, gérer et partager facilement des articles, avec une interface d’administration, le téléversement d’images et un système de tags.",
-        "apprentis": "Le site d’un centre de formation linguistique présentant les cours, enseignants et inscriptions, avec un design clair et un support multilingue.",
-        "msmvoyages": "Un site web pour une agence de voyages mettant en avant les destinations, formules et demandes en ligne, conçu avec simplicité et élégance."
+        "apprentis": "Une landing page pour un centre de formation en langues étrangères, avec un design moderne et un formulaire d’inscription qui envoie les informations à l’administration pour finaliser le processus d’inscription.",
+        "msmvoyages": "Un site professionnel pour une agence de voyage présentant ses services et ses destinations. Il inclut un formulaire de réservation qui envoie les informations à l’administrateur par e-mail pour finaliser le processus.",
+        "rayshooting": "Un site moderne et animé pour un studio photographique présentant ses services. Il comprend un formulaire de réservation qui envoie les informations à l’administrateur par e-mail.",
+        "wac": "Un site web démo présentant les informations du Wydad Athletic Club, avec un design qui reflète l’identité visuelle et l’esprit du club.",
+        "fastexpress": "Une landing page pour une agence de livraison présentant ses services avec un design clair et responsive.",
+        "budgetwindowcleanning": "Une landing page pour une agence de nettoyage de fenêtres présentant ses services avec un design clair et responsive.",
+        "topico": "Un site e-commerce côté frontend présentant des produits avec un design moderne et responsive.",
+        "bestportlandcleaners": "Un site web moderne et animé pour une agence de nettoyage, avec un design responsive pour présenter ses services.",
+        "mtinformatique": "Un site e-commerce pour du matériel informatique avec trois types d’utilisateurs : administrateur, employés et clients. Chaque rôle dispose de son propre tableau de bord et de fonctionnalités spécifiques.",
+        "wordsearchgenerator": "Un outil qui permet aux utilisateurs de choisir une thématique, de récupérer des mots-croisés via une API AI, et de générer un PDF sous forme de livre de mots-croisés."
       },
       "previewButton": "Voir le site",
       "githubButton": "Dépôt Github"
@@ -184,24 +200,32 @@
     },
     "noResult": "Aucun projet trouvé. Essayez de modifier votre recherche ou vos filtres !",
     "cta": {
-      "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
-      "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
-      "button": "📩 Me Contacter"
+      "title": "Vous avez un projet en tête ?",
+      "description": "Discutons de la façon dont je peux vous aider à donner vie à votre vision avec un design soigné et un code efficace.",
+      "button": "💡 Démarrer Votre Projet"
     }
   },
   "certificates": {
     "title": "Mes Certificats",
     "description": "Découvrez mes certifications professionnelles par catégorie.",
     "items": {
-      "react": "Cours d'apprentissage de React"
+      "react": "Cours d’apprentissage de React",
+      "typescript": "Cours d’apprentissage de TypeScript",
+      "advancedreact": "Cours de React Avancé",
+      "express": "Cours d’apprentissage d’Express",
+      "gitgithub": "Cours d’apprentissage de Git et GitHub",
+      "mongodb": "Cours d’apprentissage de MongoDB",
+      "reactredux": "Créer une application web avancée avec React et Redux — Parcours de compétences",
+      "redux": "Cours d’apprentissage de Redux : Redux Toolkit",
+      "expressskills": "Parcours de compétences : Sécuriser les applications Express"
     },
     "all": "Tout",
     "tools": "Outils",
     "noResult": "Aucun certificat trouvé dans cette catégorie.",
     "cta": {
-      "title": "Construisons Quelque Chose d’Exceptionnel Ensemble",
-      "description": "Je suis toujours ouvert à de nouveaux projets, des collaborations ou simplement une discussion amicale autour du code.",
-      "button": "📩 Me Contacter"
+      "title": "L’apprentissage ne s’arrête jamais",
+      "description": "J’améliore continuellement mes compétences pour offrir les meilleurs résultats possibles. Grandissons ensemble.",
+      "button": "🌱 Restons Connectés"
     }
   }
 }

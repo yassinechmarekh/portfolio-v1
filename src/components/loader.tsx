@@ -22,13 +22,13 @@ const Loader = ({ loaderTime }: LoaderProps) => {
         ? [
             "Initialisation des composants...",
             "Compilation des ressources...",
-            "Connexion au serveur quantique...",
+            "Connexion au serveur...",
             "Déploiement terminé.",
           ]
         : [
             "Initializing Components...",
             "Compiling Assets...",
-            "Connecting to Quantum Server...",
+            "Connecting to Server...",
             "Deployment Complete.",
           ],
     [lang]

@@ -22,7 +22,7 @@ const SkillsAbout = async ({ lang }: SkillsAboutProps) => {
         >
           {skillsContent.title}
         </Title>
-        <div className={"space-y-6 mt-4 ml-6"}>
+        <div className={"space-y-6 mt-4 ml-6 overflow-hidden"}>
           <div className={"space-y-4"}>
             <h3 className={"font-semibold text-base xs:text-lg"}>
               {skillsContent.frontend}

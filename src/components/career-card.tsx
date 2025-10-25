@@ -1,5 +1,6 @@
 import { MapPin } from "lucide-react";
 import React from "react";
+import { Parag } from "./text";
 
 interface CareerCardProps {
   location: string;
@@ -39,8 +40,8 @@ const CareerCard = ({
       {details && (
         <ul className="space-y-2 mt-4 pl-4 list-disc">
           {details.map((detail, i) => (
-            <li key={i} className="text-foreground/80">
-              <span>{detail}</span>
+            <li key={i}>
+              <Parag className="text-foreground/80">{detail}</Parag>
             </li>
           ))}
         </ul>

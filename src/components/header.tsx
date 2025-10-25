@@ -113,7 +113,7 @@ const Header = ({ lang, menu }: HeaderProps) => {
       <Link
         href={`/${lang}`}
         className={cn(
-          "flex items-center justify-center w-6 h-6 xs:w-8 xs:h-8 rounded-full  hover-effect",
+          "flex items-center justify-center w-7 h-7 xs:w-8 xs:h-8 rounded-full  hover-effect",
           activeSection === "home"
             ? "menu-item-active [&_svg]:text-slate-700 dark:[&_svg]:text-cyan-300"
             : "menu-item-inactive [&_svg]:text-slate-700 dark:[&_svg]:text-white dark:hover:[&_svg]:text-cyan-300"
@@ -156,13 +156,13 @@ const Header = ({ lang, menu }: HeaderProps) => {
               key={item.label}
               href={item.href}
               className={cn(
-                "flex items-center justify-center w-6 h-6 xs:w-8 xs:h-8 rounded-full",
+                "flex items-center justify-center w-7 h-7 xs:w-8 xs:h-8 rounded-full",
                 activeSection === item.id
                   ? "menu-item-active [&_svg]:text-slate-700 dark:[&_svg]:text-cyan-300"
                   : "menu-item-inactive [&_svg]:text-slate-700 hover:[&_svg]:text-slate-700 dark:[&_svg]:text-white dark:hover:[&_svg]:text-cyan-300"
               )}
             >
-              <Icon className={"size-4 xs:size-5"} />
+              <Icon className={"size-4.5 xs:size-5"} />
             </Link>
           );
         })}

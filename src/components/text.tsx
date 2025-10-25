@@ -17,5 +17,5 @@ export const Title = ({ className, children }: TextProps) => {
 };
 
 export const Parag = ({ className, children }: TextProps) => {
-  return <p className={cn("text-xs xs:text-base", className)}>{children}</p>;
+  return <p className={cn("text-sm xs:text-base", className)}>{children}</p>;
 };

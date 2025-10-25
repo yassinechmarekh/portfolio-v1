@@ -23,7 +23,7 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       description: projectsItems.descriptions.sydigital,
       image: "/images/projects/sydigital.jpg",
       video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/sydigital.mp4",
-      stack: ["React JS", "Tailwind", "ShadCn"],
+      stack: ["React JS", "Tailwind", "ShadCN"],
       url: "https://sydigital.org/",
       github: "https://github.com/yassinechmarekh/sydigital",
       publishedAt: new Date("2024-12-09"),
@@ -38,7 +38,7 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       stack: [
         "React JS",
         "Tailwind",
-        "ShadCn",
+        "ShadCN",
         "Node JS",
         "Express JS",
         "Redux Toolkit",

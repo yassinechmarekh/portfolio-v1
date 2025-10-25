@@ -11,6 +11,7 @@ import { AppRoutes, MenuLinks } from "@/lib/constants";
 import ParagEffect from "@/components/parag-effect";
 import { LocaleType } from "@/types";
 import { motion } from "framer-motion";
+import { Parag } from "@/components/text";
 
 interface AboutHomeProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -72,10 +73,10 @@ const AboutHome = ({ aboutContent, lang }: AboutHomeProps) => {
                     key={index}
                     className="bg-gray-100 dark:bg-gray-900/50 p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-cyan-500/50 dark:hover:border-cyan-500/50 hover-effect"
                   >
-                    <p className="font-bold text-cyan-600 dark:text-cyan-400">
+                    <Parag className="font-bold text-cyan-600 dark:text-cyan-400">
                       {card.title}
-                    </p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    </Parag>
+                    <p className="text-xs xs:text-sm text-gray-600 dark:text-gray-400">
                       {card.description}
                     </p>
                   </div>

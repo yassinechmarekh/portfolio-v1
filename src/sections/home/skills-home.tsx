@@ -11,7 +11,7 @@ interface SkillsHomeProps {
 
 const SkillsHome = ({ skillsContent }: SkillsHomeProps) => {
   return (
-    <section className={"py-10"} id={MenuLinks.SKILLS}>
+    <section className={"py-10 overflow-hidden"} id={MenuLinks.SKILLS}>
       <Container>
         <HeaderSection
           title={skillsContent.title}

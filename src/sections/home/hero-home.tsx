@@ -55,7 +55,7 @@ const HeroHome = ({ lang, heroContent }: HeroHomeProps) => {
   };
 
   return (
-    <section className={"relative min-h-screen"} id={MenuLinks.HOME}>
+    <section className={"relative sm:min-h-screen"} id={MenuLinks.HOME}>
       <HeroEffect />
       <Container>
         <motion.div
@@ -96,10 +96,14 @@ const HeroHome = ({ lang, heroContent }: HeroHomeProps) => {
             className={"flex flex-wrap justify-center gap-4"}
           >
             <Button variant={"primary"} size={"lg"} asChild>
-              <Link href={`/${lang}/#${MenuLinks.PROJECTS}`}>{heroContent.buttons.projects}</Link>
+              <Link href={`/${lang}/#${MenuLinks.PROJECTS}`}>
+                {heroContent.buttons.projects}
+              </Link>
             </Button>
             <Button variant={"secondary"} size={"lg"} asChild>
-              <Link href={`/${lang}/#${MenuLinks.CONTACT}`}>{heroContent.buttons.contact}</Link>
+              <Link href={`/${lang}/#${MenuLinks.CONTACT}`}>
+                {heroContent.buttons.contact}
+              </Link>
             </Button>
           </motion.div>
         </motion.div>

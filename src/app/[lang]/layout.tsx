@@ -76,7 +76,9 @@ export default async function RootLayout({
           disableTransitionOnChange
           storageKey={CookiesKey.THEME}
         >
-          <SplashCursor />
+          <div className={"hidden md:block"}>
+            <SplashCursor />
+          </div>
           <LoaderWrapper>
             <Header lang={lang} menu={locales.header.navigation} />
             {children}

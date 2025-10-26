@@ -207,7 +207,7 @@ const ProjectsList = ({ allProjects, localeContent }: ProjectsListProps) => {
           <AnimatePresence>
             {filteredAndSortedProjects.map((project, index) => (
               <motion.div
-                key={`${project.title}-${Math.random()}`}
+                key={`${project.title}-${index}`}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index, duration: 0.4 }}

@@ -82,7 +82,7 @@ const ProjectsList = ({ allProjects, localeContent }: ProjectsListProps) => {
               <Button
                 variant={"secondary"}
                 className={
-                  "[&_svg]:size-5 [&_svg]:text-slate-700/80 dark:[&_svg]:text-white/80 rounded-lg"
+                  "[&_svg]:size-4 xs:[&_svg]:size-5 [&_svg]:text-slate-700/80 dark:[&_svg]:text-white/80 rounded-lg"
                 }
                 onClick={toogleSortOrder}
               >
@@ -95,7 +95,7 @@ const ProjectsList = ({ allProjects, localeContent }: ProjectsListProps) => {
               <Button
                 variant={"secondary"}
                 className={
-                  "[&_svg]:size-5 text-slate-700/80 dark:[&_svg]:text-white/80 rounded-lg"
+                  "[&_svg]:size-4 xs:[&_svg]:size-5 text-slate-700/80 dark:[&_svg]:text-white/80 rounded-lg"
                 }
                 onClick={() => setIsFiltersOpen(!isFiltersOpen)}
               >

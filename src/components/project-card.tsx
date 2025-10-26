@@ -48,7 +48,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         />
 
         <video
-          className="absolute size-full inset-0 object-cover rounded-md opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          className="absolute hidden md:block size-full inset-0 object-cover rounded-md opacity-0 transition-opacity duration-300 group-hover:opacity-100"
           src={project.video}
           autoPlay
           loop

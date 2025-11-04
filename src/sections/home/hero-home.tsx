@@ -60,52 +60,52 @@ const HeroHome = ({ lang, heroContent }: HeroHomeProps) => {
       <Container>
         <motion.div
           className={
-            "flex flex-col items-center justify-center space-y-4 max-w-5xl min-h-screen py-10 z-10"
+            "flex flex-col items-center justify-center min-h-screen space-y-4 max-w-5xl py-10 mx-auto z-10"
           }
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.div variants={badgeVariants}>
-            <StarBorder
-              as="button"
-              className="custom-class"
-              color="cyan"
-              speed="3s"
+            <motion.div variants={badgeVariants}>
+              <StarBorder
+                as="button"
+                className="custom-class"
+                color="cyan"
+                speed="3s"
+              >
+                <Parag>{heroContent.intro_badge}</Parag>
+              </StarBorder>
+            </motion.div>
+            <motion.div variants={itemVariants}>
+              <AnimatedHeading roles={heroContent.title} />
+            </motion.div>
+            <motion.div variants={itemVariants}>
+              <Parag className={"text-center"}>{heroContent.description}</Parag>
+            </motion.div>
+            <motion.div variants={itemVariants}>
+              <Parag
+                className={
+                  "italic text-center text-cyan-600/80 dark:text-cyan-400"
+                }
+              >
+                {heroContent.quote}
+              </Parag>
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              className={"flex flex-wrap justify-center gap-4"}
             >
-              <Parag>{heroContent.intro_badge}</Parag>
-            </StarBorder>
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <AnimatedHeading roles={heroContent.title} />
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <Parag className={"text-center"}>{heroContent.description}</Parag>
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <Parag
-              className={
-                "italic text-center text-cyan-600/80 dark:text-cyan-400"
-              }
-            >
-              {heroContent.quote}
-            </Parag>
-          </motion.div>
-          <motion.div
-            variants={itemVariants}
-            className={"flex flex-wrap justify-center gap-4"}
-          >
-            <Button variant={"primary"} size={"lg"} asChild>
-              <Link href={`/${lang}/#${MenuLinks.PROJECTS}`}>
-                {heroContent.buttons.projects}
-              </Link>
-            </Button>
-            <Button variant={"secondary"} size={"lg"} asChild>
-              <Link href={`/${lang}/#${MenuLinks.CONTACT}`}>
-                {heroContent.buttons.contact}
-              </Link>
-            </Button>
-          </motion.div>
+              <Button variant={"primary"} size={"lg"} asChild>
+                <Link href={`/${lang}/#${MenuLinks.PROJECTS}`}>
+                  {heroContent.buttons.projects}
+                </Link>
+              </Button>
+              <Button variant={"secondary"} size={"lg"} asChild>
+                <Link href={`/${lang}/#${MenuLinks.CONTACT}`}>
+                  {heroContent.buttons.contact}
+                </Link>
+              </Button>
+            </motion.div>
         </motion.div>
       </Container>
     </section>

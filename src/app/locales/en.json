@@ -173,7 +173,8 @@
         "topico": "Topico — Frontend E-commerce Project",
         "bestportlandcleaners": "Best Portland Cleaners — Cleaning Service Website",
         "mtinformatique": "MT Informatique — Computer Hardware E-commerce",
-        "wordsearchgenerator": "Word Search Generator — AI-powered Puzzle Tool"
+        "wordsearchgenerator": "Word Search Generator — AI-powered Puzzle Tool",
+        "resumedot": "Resume Dot - AI Resume Builder"
       },
       "descriptions": {
         "selfiecadeau": "An online store that allows users to customize affordable gifts by adding their own text. Features include product management, coupon system, and automated email notifications.",
@@ -188,7 +189,8 @@
         "topico": "A frontend e-commerce website showcasing products with a modern and responsive design.",
         "bestportlandcleaners": "A modern and animated website for a cleaning agency, featuring a responsive design to showcase its services.",
         "mtinformatique": "An e-commerce website for computer hardware with three user roles: admin, employees, and clients. Each role has its own dashboard and specific functionalities.",
-        "wordsearchgenerator": "A tool that allows users to choose a niche, fetches word searches via an AI API, and generates a PDF in the form of a word search book."
+        "wordsearchgenerator": "A tool that allows users to choose a niche, fetches word searches via an AI API, and generates a PDF in the form of a word search book.",
+        "resumedot": "An intelligent resume generator that helps users build, enhance, and download their resumes using ready-made professional templates."
       },
       "previewButton": "Live Preview",
       "githubButton": "Github Repository"

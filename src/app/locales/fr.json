@@ -173,7 +173,8 @@
         "topico": "Topico — Projet E-commerce Frontend",
         "bestportlandcleaners": "Best Portland Cleaners — Site Web d’Agence de Nettoyage",
         "mtinformatique": "MT Informatique — E-commerce de Matériel Informatique",
-        "wordsearchgenerator": "Word Search Generator — Outil de Mots-Croisés AI"
+        "wordsearchgenerator": "Word Search Generator — Outil de Mots-Croisés AI",
+        "resumedot": "Resume Dot - Créateur de CV par IA"
       },
       "descriptions": {
         "selfiecadeau": "Une boutique en ligne qui permet aux utilisateurs de personnaliser des cadeaux abordables en ajoutant leur propre texte. Elle comprend la gestion des produits, un système de coupons et des notifications par e-mail automatisées.",
@@ -188,7 +189,8 @@
         "topico": "Un site e-commerce côté frontend présentant des produits avec un design moderne et responsive.",
         "bestportlandcleaners": "Un site web moderne et animé pour une agence de nettoyage, avec un design responsive pour présenter ses services.",
         "mtinformatique": "Un site e-commerce pour du matériel informatique avec trois types d’utilisateurs : administrateur, employés et clients. Chaque rôle dispose de son propre tableau de bord et de fonctionnalités spécifiques.",
-        "wordsearchgenerator": "Un outil qui permet aux utilisateurs de choisir une thématique, de récupérer des mots-croisés via une API AI, et de générer un PDF sous forme de livre de mots-croisés."
+        "wordsearchgenerator": "Un outil qui permet aux utilisateurs de choisir une thématique, de récupérer des mots-croisés via une API AI, et de générer un PDF sous forme de livre de mots-croisés.",
+        "resumedot": "Un générateur de CV intelligent qui aide les utilisateurs à construire, améliorer et télécharger leur CV en utilisant des modèles professionnels déjà disponibles sur la plateforme. Le système inclut des fonctionnalités AI comme l’optimisation du contenu."
       },
       "previewButton": "Voir le site",
       "githubButton": "Dépôt Github"

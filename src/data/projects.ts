@@ -7,14 +7,22 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
 
   return [
     {
-      title: projectsItems.titles.selfiecadeau,
-      description: projectsItems.descriptions.selfiecadeau,
-      image: "/images/projects/selfie-cadeau.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/selfie-cadeau.mp4",
-      stack: ["Html", "CSS", "JavaScript", "Laravel"],
-      url: "https://selfiecadeau.com/",
-      github: "https://github.com/yassinechmarekh/selfiecadeau",
-      publishedAt: new Date("2024-10-05"),
+      title: projectsItems.titles.resumedot,
+      description: projectsItems.descriptions.resumedot,
+      image: "/images/projects/resume-dot.jpg",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/resume-dot.mp4",
+      stack: [
+        "Next JS",
+        "Tailwind",
+        "ShadCN",
+        "TypeScript",
+        "Node JS",
+        "Express JS",
+      ],
+      url: "https://resumedot.vercel.app/",
+      github: "https://github.com/yassinechmarekh/resume-dot",
+      publishedAt: new Date("2025-11-22"),
       isOnline: true,
       isFavorite: true,
     },
@@ -22,7 +30,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.sydigital,
       description: projectsItems.descriptions.sydigital,
       image: "/images/projects/sydigital.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/sydigital.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/sydigital.mp4",
       stack: ["React JS", "Tailwind", "ShadCN"],
       url: "https://sydigital.org/",
       github: "https://github.com/yassinechmarekh/sydigital",
@@ -34,7 +43,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.blogify,
       description: projectsItems.descriptions.blogify,
       image: "/images/projects/blogify.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/blogify.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/blogify.mp4",
       stack: [
         "React JS",
         "Tailwind",
@@ -50,10 +60,24 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       isFavorite: true,
     },
     {
+      title: projectsItems.titles.selfiecadeau,
+      description: projectsItems.descriptions.selfiecadeau,
+      image: "/images/projects/selfie-cadeau.jpg",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/selfie-cadeau.mp4",
+      stack: ["Html", "CSS", "JavaScript", "Laravel"],
+      url: "https://selfiecadeau.com/",
+      github: "https://github.com/yassinechmarekh/selfiecadeau",
+      publishedAt: new Date("2024-10-05"),
+      isOnline: true,
+      isFavorite: true,
+    },
+    {
       title: projectsItems.titles.msmvoyages,
       description: projectsItems.descriptions.msmvoyages,
       image: "/images/projects/msm_voyages.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/msmvoyages.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/msmvoyages.mp4",
       stack: ["Html", "CSS", "JavaScript"],
       url: "https://msm-voyages.vercel.app/",
       github: "https://github.com/yassinechmarekh/msm_voyages",
@@ -65,7 +89,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.apprentis,
       description: projectsItems.descriptions.apprentis,
       image: "/images/projects/apprentis.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/apprentis.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/apprentis.mp4",
       stack: ["Html", "CSS", "JavaScript"],
       url: "https://apprentis.vercel.app/",
       github: "https://github.com/yassinechmarekh/apprentis",
@@ -77,7 +102,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.topico,
       description: projectsItems.descriptions.topico,
       image: "/images/projects/topico.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/topico.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/topico.mp4",
       stack: ["Html", "CSS", "JavaScript"],
       url: "https://topico-ebon.vercel.app/",
       github: "https://github.com/yassinechmarekh/topico",
@@ -89,7 +115,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.wac,
       description: projectsItems.descriptions.wac,
       image: "/images/projects/wydad-athletic-club.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/wac.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/wac.mp4",
       stack: ["Html", "CSS", "BootStrap", "JavaScript"],
       url: "https://wydad-athletic-club-xi.vercel.app/",
       github: "https://github.com/yassinechmarekh/wydad-athletic-club",
@@ -101,7 +128,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.budgetwindowcleanning,
       description: projectsItems.descriptions.budgetwindowcleanning,
       image: "/images/projects/budget-window-cleaning.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/budget-window-cleaning.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/budget-window-cleaning.mp4",
       stack: ["React JS", "Tailwind"],
       url: "https://budget-window-cleaning.vercel.app/",
       github: "https://github.com/yassinechmarekh/budget-window-cleaning",
@@ -113,7 +141,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.bestportlandcleaners,
       description: projectsItems.descriptions.bestportlandcleaners,
       image: "/images/projects/bestportlandcleaners.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/best-portland-cleaners.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/best-portland-cleaners.mp4",
       stack: ["React JS", "Tailwind", "ShadCN"],
       url: "https://bestportlandcleaners.vercel.app/",
       github: "https://github.com/yassinechmarekh/bestportlandcleaners",
@@ -125,7 +154,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.fastexpress,
       description: projectsItems.descriptions.fastexpress,
       image: "/images/projects/fastexpress.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/fastexpress.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/fastexpress.mp4",
       stack: ["Html", "Tailwind"],
       url: "https://fastexpress-v2.vercel.app/",
       github: "https://github.com/yassinechmarekh/fastexpress",
@@ -137,7 +167,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.rayshooting,
       description: projectsItems.descriptions.rayshooting,
       image: "/images/projects/rayshooting.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/rayshooting.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/rayshooting.mp4",
       stack: ["Html", "CSS", "JavaScript"],
       url: "https://rayshooting.onrender.com/",
       github: "https://github.com/yassinechmarekh/rayshooting",
@@ -149,7 +180,8 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.mtinformatique,
       description: projectsItems.descriptions.mtinformatique,
       image: "/images/projects/mt-informatique.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/mt-informatique.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/mt-informatique.mp4",
       stack: ["Html", "CSS", "BootStrap", "JavaScript", "Laravel"],
       url: "",
       github: "https://github.com/yassinechmarekh/mt-informatique",
@@ -161,13 +193,14 @@ const getProjects = async (lang: LocaleType): Promise<ProjectType[]> => {
       title: projectsItems.titles.wordsearchgenerator,
       description: projectsItems.descriptions.wordsearchgenerator,
       image: "/images/projects/ai-word-search-puzzle.jpg",
-      video: "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/ai-word-search.mp4",
+      video:
+        "https://yassinechmarekh.github.io/cloud/portfolio-v1/projects/videos/ai-word-search.mp4",
       stack: ["Next JS", "Tailwind", "ShadCN", "TypeScript"],
       url: "https://ai-word-search-generator.vercel.app/",
       github: "https://github.com/yassinechmarekh/ai-word-search-generator",
       publishedAt: new Date("2025-07-29"),
       isOnline: true,
-      isFavorite: true,
+      isFavorite: false,
     },
   ];
 };

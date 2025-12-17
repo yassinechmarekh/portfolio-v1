@@ -1,11 +1,11 @@
-import CTA from "@/components/cta";
 import { MenuLinks } from "@/lib/constants";
 import { getLocales } from "@/lib/locales";
+import { LocaleType } from "@/types";
+import CTA from "@/components/cta";
 import AboutHome from "@/sections/home/about-home";
 import HeroHome from "@/sections/home/hero-home";
 import ProjectsHome from "@/sections/home/projects-home";
 import SkillsHome from "@/sections/home/skills-home";
-import { LocaleType } from "@/types";
 
 export const metadata = {
   description:
